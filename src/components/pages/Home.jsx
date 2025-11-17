@@ -951,18 +951,7 @@ export default function Home() {
                 <div className="product-info">
                   <h4>{item.name}</h4>
 
-                
-
-                  {/* TIME BASED PRICE */}
-                  <div className="product-price-box">
-                    {showRealPrice ? (
-                      <>
-                        <p className="price">
-                          Today Rate: ₹
-                          {item.basePrice + (item.difference || 0)}
-                        </p>  
-                      <br/>
-                            <p
+                 <p
                     className={`difference ${
                       item.difference >= 0 ? "positive" : "negative"
                     }`}
@@ -972,6 +961,17 @@ export default function Home() {
                       ? `+₹${item.difference}`
                       : `₹${item.difference}`}
                   </p>  
+
+                  {/* TIME BASED PRICE */}
+                  <div className="product-price-box">
+                    {showRealPrice ? (
+                      <>  
+                        <p className="price">
+                          Today Rate: ₹
+                          {item.basePrice + (item.difference || 0)}
+                        </p>  
+                      <br/>
+                           
                         <br/>
                         <p className="store-status open">
                           Live Price (8AM–11PM)
@@ -997,5 +997,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
