@@ -487,3 +487,26 @@ body {
   opacity: 0.9;
   transform: translateY(-2px);
 }
+
+/* BANNER */
+.promo-banner {
+  margin: 25px 0;
+  padding: 22px;
+  background: linear-gradient(135deg, #dbeafe, #eef2ff);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.promo-banner h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.promo-banner p {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #334155;
+}
