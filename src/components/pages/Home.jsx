@@ -960,8 +960,9 @@ export default function Home() {
                         <p className="price">
                           Today Rate: ₹
                           {item.basePrice + (item.difference || 0)}
-                        </p> 
-                          <p
+                        </p>  
+                      <br/>
+                            <p
                     className={`difference ${
                       item.difference >= 0 ? "positive" : "negative"
                     }`}
@@ -970,7 +971,8 @@ export default function Home() {
                     {item.difference >= 0
                       ? `+₹${item.difference}`
                       : `₹${item.difference}`}
-                  </p>
+                  </p>  
+                        <br/>
                         <p className="store-status open">
                           Live Price (8AM–11PM)
                         </p> 
@@ -995,4 +997,5 @@ export default function Home() {
     </div>
   );
 }
+
 
