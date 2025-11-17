@@ -305,18 +305,20 @@ body {
   display: inline-block;
   letter-spacing: 0.2px;
 }
-
+/* TEJI (POSITIVE) – SAME STYLE AS STORE OPEN GREEN BOX */
 .difference.positive {
-  
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
   color: #065f46;
-
+  border: 1px solid #a7f3d0;
 }
 
+/* MADDI (NEGATIVE) – ALREADY OK, bas match kar diya */
 .difference.negative {
   background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
   color: #991b1b;
   border: 1px solid #fca5a5;
 }
+
 
 .no-items {
   grid-column: 1 / -1;
@@ -464,3 +466,4 @@ body {
     padding: 5px 10px;
   }
 } 
+
