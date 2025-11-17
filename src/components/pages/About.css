@@ -2,32 +2,30 @@
   max-width: 1200px;
   margin: 30px auto;
   background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px;
   font-family: "Inter", sans-serif;
-  border: 1px solid #f1f1f1;
 }
 
 .analytics-title {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   color: #1d3557;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .analytics-subtitle {
   text-align: center;
   color: #6c757d;
-  margin-bottom: 30px;
-  font-size: 15px;
+  margin-bottom: 25px;
 }
 
 .filter-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
@@ -36,29 +34,22 @@
 .filter-group {
   display: flex;
   flex-direction: column;
-  min-width: 180px;
+  align-items: flex-start;
 }
 
 .filter-group label {
   font-size: 13px;
   font-weight: 600;
   color: #495057;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .filter-group select,
 .filter-group input {
-  padding: 10px 12px;
-  border: 1px solid #dfe4ea;
-  border-radius: 10px;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 14px;
-  background: #fafafa;
-  transition: 0.2s;
-}
-
-.filter-group select:focus,
-.filter-group input:focus {
-  border-color: #007bff;
   background: #fff;
 }
 
@@ -66,26 +57,20 @@
   background: #007bff;
   color: #fff;
   border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
+  border-radius: 8px;
+  padding: 9px 16px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0px 3px 8px rgba(0, 123, 255, 0.3);
-  transition: 0.25s;
+  transition: 0.2s;
 }
 
 .btn.refresh:hover {
   background: #0056b3;
-  transform: translateY(-2px);
 }
 
 .chart-wrapper {
   height: 480px;
   position: relative;
-  padding: 20px;
-  background: linear-gradient(135deg, #fdfdfd, #f7f9fc);
-  border-radius: 14px;
-  border: 1px solid #ececec;
 }
 
 .loading,
@@ -94,7 +79,6 @@
   font-weight: 500;
   color: #6c757d;
   margin-top: 50px;
-  font-size: 15px;
 }
 
 /* Responsive */
@@ -106,10 +90,9 @@
 
   .chart-wrapper {
     height: 380px;
-    padding: 12px;
   }
 
   .analytics-title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
