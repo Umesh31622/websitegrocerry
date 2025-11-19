@@ -209,14 +209,10 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
-
-  /* TIME CHECK */
   const isWithinTime = () => {
     const hour = new Date().getHours();
     return hour >= 8 && hour <= 23;
   };
-
-  /* LOAD DATA */
   useEffect(() => {
     loadData();
   }, []);
@@ -391,3 +387,4 @@ export default function Home() {
     </div>
   );
 }
+
