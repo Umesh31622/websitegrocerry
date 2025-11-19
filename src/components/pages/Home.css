@@ -59,6 +59,8 @@
   max-width: 600px;
   position: relative;
   margin-bottom: 20px;
+  margin-top: 12px;
+  
 }
 
 .search-container input {
@@ -295,4 +297,48 @@
     min-height: 17px !important;
   }
 }
+/* SCROLLABLE BANNERS */
+.banner-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+}
 
+.banner-scroll:active {
+  cursor: grabbing;
+}
+
+.banner-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* ⭐ Banner width fixed — NO cutting */
+.banner-item {
+  min-width: 100%;     /* full viewport width */
+  flex-shrink: 0;
+}
+
+.hero-banner {
+  width: 100%;         /* ⭐ full width */
+  height: 180px;
+  border-radius: 14px;
+  object-fit: cover;   /* ⭐ image fit without cutting */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform .25s ease;
+}
+
+.hero-banner:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .hero-banner {
+    height: 140px;     /* mobile-friendly */
+  }
+}
