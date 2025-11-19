@@ -313,7 +313,10 @@ export default function Home() {
 
       {/* MAIN CONTENT */}
       <div className="home-main">
-
+        {/* BANNER */}
+        <div className="top-banner">
+          <img src={image} alt="banner" className="hero-banner" />
+        </div>
         {/* SEARCH BAR */}
         <div className="search-container">
           <input
@@ -357,10 +360,7 @@ export default function Home() {
   </Link>
 </li>
 
-        {/* BANNER */}
-        <div className="top-banner">
-          <img src={image} alt="banner" className="hero-banner" />
-        </div>
+        
 
         {/* PRODUCT GRID */}
         <div className="product-grid">
@@ -400,3 +400,4 @@ export default function Home() {
     </div>
   );
 }
+
