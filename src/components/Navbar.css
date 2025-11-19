@@ -1,3 +1,4 @@
+/* NAVBAR BASE */
 .navbar {
   backdrop-filter: blur(12px);
   background: rgba(255, 255, 255, 0.45);
@@ -18,15 +19,15 @@
   align-items: center;
 }
 
-/* Logo with Gradient */
+/* LOGO */
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 800;
   text-decoration: none;
   background: linear-gradient(135deg, #ff4d4d, #ff6a00, #ffcc00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .logo:hover {
@@ -34,74 +35,43 @@
   transform: scale(1.05);
 }
 
-/* Menu */
-.nav-menu {
+/* RIGHT SIDE (Address + Mobile) */
+.nav-right {
   display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
 }
 
-.nav-menu li a {
-  text-decoration: none;
-  font-size: 1.1rem;
+/* EACH LINE */
+.nav-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;         /* ⭐ Smaller text size */
   font-weight: 600;
-
-  /* Gradient Text */
-  background: linear-gradient(90deg, #4f46e5, #3b82f6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  position: relative;
-  transition: all 0.3s ease;
+  color: #059669;          /* ⭐ Green text */
 }
 
-/* Underline Glow */
-.nav-menu li a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  border-radius: 4px;
-  background: linear-gradient(90deg, #3b82f6, #06b6d4);
-  transition: width 0.3s ease;
+/* ICONS GREEN */
+.nav-icon {
+  color: #059669 !important;   /* ⭐ Green */
+  stroke: #059669 !important;  /* ⭐ Green */
+  stroke-width: 2;
 }
 
-.nav-menu li a:hover::after {
-  width: 100%;
-}
-
-/* Hover Glow Effect */
-.nav-menu li a:hover {
-  filter: drop-shadow(0px 0px 6px rgba(59, 130, 246, 0.6));
-  transform: translateY(-1px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-menu {
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .nav-right {
+    align-items: flex-start;
   }
 
-  .nav-menu li a {
-    font-size: 1.2rem;
+  .nav-info {
+    font-size: 12px;        /* ⭐ Even smaller for mobile */
   }
-}
-.graph-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.graph-svg {
-  transition: 0.3s;
-}
 
-.graph-link:hover .graph-svg {
-  stroke: #06b6d4;
-  transform: translateY(-2px);
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
