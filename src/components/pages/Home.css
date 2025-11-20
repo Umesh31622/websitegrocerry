@@ -146,7 +146,7 @@
 
   height: auto !important;
   display: -webkit-box;
-  -webkit-line-clamp: 4;  
+  -webkit-line-clamp: 2;  /* Change to 3 for 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -370,5 +370,42 @@
   border-color: #3b82f6;
   box-shadow: 0 3px 10px rgba(59,130,246,0.25);
 }
+/* 🔴 BLINKING LIVE BUTTON */
+.live-btn {
+  display: flex;
+  align-items: center;
+  background: #ff1a1a;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 6px;
+  animation: liveBlink 1s infinite;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
 
+@keyframes liveBlink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
 
+/* ⭐ COMMON top info row */
+.top-info-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;     /* ⭐ gap between all buttons */
+  margin-right: 12px;
+}
+
+.live-date-box {
+  font-size: 11px;
+  font-weight: 600;
+  color: #1f2937;
+  background: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
