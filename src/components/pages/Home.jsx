@@ -744,6 +744,7 @@ export default function Home() {
   >
     See Price Graph
   </Link>
+  </div> 
 
         {/* SEARCH BAR */}
         <div className="search-container">
@@ -795,6 +796,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
