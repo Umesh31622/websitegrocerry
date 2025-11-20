@@ -466,33 +466,37 @@ const PriceAnalytics = () => {
 
       </div>
 
-      <div className="chart-wrapper">
-        {loading ? (
-          <div className="loading">Loading chart...</div>
-        ) : (
-          <Line
-            data={chartData}
-            options={{
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: {
-                legend: { position: "bottom" },
-                datalabels: {
-                  color: "black",
-                  anchor: "end",
-                  align: "top",
-                  formatter: (v) => `₹${v}`,
-                  font: { size: 12, weight: "bold" },
-                },
-              },
-            }}
-          />
-        )}
-      </div>
+  
+     <div className="chart-wrapper">
+  {loading ? (
+    <div className="loader-container">
+      <div className="spinner"></div>
+    </div>
+  ) : (
+    <Line
+      data={chartData}
+      options={{
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: "bottom" },
+          datalabels: {
+            color: "black",
+            anchor: "end",
+            align: "top",
+            formatter: (v) => `₹${v}`,
+            font: { size: 12, weight: "bold" },
+          },
+        },
+      }}
+    />
+  )}
+</div>
     </div>
   );
 };
 
 export default PriceAnalytics;
+
 
 
