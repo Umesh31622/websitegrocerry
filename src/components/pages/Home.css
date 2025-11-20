@@ -146,7 +146,7 @@
 
   height: auto !important;
   display: -webkit-box;
-  -webkit-line-clamp: 2;  /* Change to 3 for 3 lines */
+  -webkit-line-clamp: 3;  
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -370,3 +370,4 @@
   border-color: #3b82f6;
   box-shadow: 0 3px 10px rgba(59,130,246,0.25);
 }
+
