@@ -691,8 +691,8 @@ export default function Home() {
   <Link
     to="/about"
     style={{
-      padding: "6px 10px",
-      fontSize: "11px",
+      padding: "4px 8px",
+      fontSize: "10px",
       fontWeight: "700",
       color: "#fff",
       textDecoration: "none",
@@ -761,6 +761,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
