@@ -43,10 +43,20 @@ export default function Navbar() {
             <span>Chhawani, Indore</span>
           </div>
 
-          <div className="nav-info">
+          {/* <div className="nav-info">
             <Phone size={18} className="nav-icon" />
             <span>9826913258</span>
-          </div>
+          </div> */}
+                 <a
+  href="https://wa.me/9826913258"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="nav-info"
+  style={{ display: "flex", alignItems: "center", gap: "6px", textDecoration: "none", color: "inherit" }}
+>
+  <Phone size={18} className="nav-icon" />
+  <span style={{ color: " #059669" }}>9826913258</span>
+</a>
 
         </div>
 
@@ -54,5 +64,6 @@ export default function Navbar() {
     </nav>
   );
 }
+
 
 
