@@ -147,7 +147,7 @@
 } */
 
 .product-card h4 {
-  font-size: 15px;
+  font-size: 12px;
   margin: 2px 0;
   line-height: 18px;
   font-weight: 600;
@@ -155,7 +155,7 @@
 
   height: auto !important;
   display: -webkit-box;
-  -webkit-line-clamp: 2;  /* Change to 3 for 3 lines */
+  -webkit-line-clamp: 3;  /* Change to 3 for 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -356,4 +356,5 @@
     height: 140px;     /* mobile-friendly */
   }
 }
+
 
