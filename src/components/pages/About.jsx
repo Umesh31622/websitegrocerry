@@ -427,7 +427,7 @@ const PriceAnalytics = () => {
       {/* Top Title Row */}
       <div className="top-bar">
         <button className="back-btn" onClick={() => window.history.back()}>
-          ← Back
+           Back
         </button>
         <h2 className="analytics-title">Price Analytics</h2>
       </div>
@@ -494,4 +494,5 @@ const PriceAnalytics = () => {
 };
 
 export default PriceAnalytics;
+
 
