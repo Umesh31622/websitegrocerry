@@ -803,8 +803,8 @@ import axios from "axios";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-import banner1 from "../../assets/Grocery Banner 1.png";
-import banner2 from "../../assets/Grocery BAnner 2.png";
+// import banner1 from "../../assets/Grocery Banner 1.png";
+// import banner2 from "../../assets/Grocery BAnner 2.png";
 
 // ⭐ WEBSITE API (only active items)
 const PRICE_API = "https://grocerrybackend.vercel.app/api/prices/website";
@@ -970,14 +970,14 @@ export default function Home() {
       {/* MAIN CONTENT */}
       <div className="home-main">
 
-        <div className="banner-scroll">
+        {/* <div className="banner-scroll">
           <div className="banner-item">
             <img src={banner1} className="hero-banner" alt="banner1" />
           </div>
           <div className="banner-item">
             <img src={banner2} className="hero-banner" alt="banner2" />
           </div>
-        </div>
+        </div> */}
 
         <div className="top-info-row">
           <div className="live-btn">LIVE</div>
@@ -1049,6 +1049,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
