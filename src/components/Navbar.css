@@ -7,35 +7,44 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  height: 75px;              /* ⭐ FIXED NAVBAR HEIGHT */
+  display: flex;
+  align-items: center;
 }
 
+/* MAIN CONTAINER */
 .navbar-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 0 1.2rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* LOGO */
-.logo {
-  font-size: 1.2rem;
-  font-weight: 800;
-  text-decoration: none;
-  background: linear-gradient(135deg, #ff4d4d, #ff6a00, #ffcc00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.3s ease;
+/* LEFT LOGO WRAPPER */
+.navbar-logo {
+  height: 75px;              /* ⭐ Same as navbar */
+  overflow: hidden;          /* ⭐ Logo navbar से बाहर नहीं जाएगा */
+  display: flex;
+  align-items: center;
 }
 
-.logo:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
+/* LOGO IMAGE */
+.nav-logo-img {
+  height: 180px;             /* ⭐ Big logo */
+  width: auto;
+  object-fit: contain;
+  transform: translateY(12px);  /* ⭐ Perfect center */
+  transition: 0.2s ease;
 }
 
-/* RIGHT SIDE (Address + Mobile) */
+.navbar-logo:hover .nav-logo-img {
+  transform: translateY(12px) scale(1.05);
+}
+
+/* RIGHT SIDE */
 .nav-right {
   display: flex;
   flex-direction: column;
@@ -43,35 +52,36 @@
   gap: 4px;
 }
 
-/* EACH LINE */
+/* TEXT + ICON */
 .nav-info {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;         /* ⭐ Smaller text size */
+  font-size: 14px;
   font-weight: 600;
-  color: #059669;          /* ⭐ Green text */
+  color: #059669;
+  text-decoration: none;
 }
 
-/* ICONS GREEN */
+/* ICON GREEN */
 .nav-icon {
-  color: #059669 !important;   /* ⭐ Green */
-  stroke: #059669 !important;  /* ⭐ Green */
-  stroke-width: 2;
+  color: #059669 !important;
+  stroke: #059669 !important;
 }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
-  .nav-right {
-    align-items: flex-start;
+
+  .navbar-container {
+    padding: 1 0rem;
+  }
+
+  .nav-logo-img {
+    height: 160px;           /* ⭐ Mobile-friendly big logo */
+    transform: translateY(8px);
   }
 
   .nav-info {
-    font-size: 12px;        /* ⭐ Even smaller for mobile */
-  }
-
-  .nav-icon {
-    width: 16px;
-    height: 16px;
+    font-size: 13px;
   }
 }
