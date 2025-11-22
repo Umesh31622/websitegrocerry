@@ -560,7 +560,7 @@
 
   height: auto !important;
   display: -webkit-box;
-  -webkit-line-clamp: 2;  /* Change to 3 for 3 lines */
+  -webkit-line-clamp: 4;  /* Change to 3 for 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -878,4 +878,5 @@
     border-width: 4px;
   }
 }
+
 
